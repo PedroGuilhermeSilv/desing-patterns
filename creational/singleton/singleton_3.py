@@ -31,6 +31,7 @@ class Singleton(type):
         return cls._instances[cls]
 
 
+
 class AppSettings(metaclass=Singleton):
     def __init__(self) -> None:
         self.tema = "O tema escuro"
