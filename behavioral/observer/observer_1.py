@@ -40,8 +40,8 @@ class WeatherStation(IObservable):
     """Observable"""
 
     def __init__(self) -> None:
-        self._observers: List[IObserver] = []
-        self._state: Dict = {}
+        self._observers: list[IObserver] = []
+        self._state: dict = {}
 
     @property
     def state(self) -> Dict:
