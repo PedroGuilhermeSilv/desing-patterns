@@ -30,7 +30,7 @@ class StripeAPI:
     def charge(self, amount: int, stripe_token: str) -> None:
         print(f"Charging {amount} with stripe token: {stripe_token}")
 
-    def refund(self, charge_id: str) -> None:
+    def refund(self, charge_id: str) -> None: 
         print(f"Refunding charge {charge_id}")
 
     def get_charge_status(self, charge_id: str) -> str:
